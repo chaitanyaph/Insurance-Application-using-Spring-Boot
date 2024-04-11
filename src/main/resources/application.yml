@@ -1,0 +1,29 @@
+server:
+  port: 9191
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Satara@123
+    url: jdbc:mysql://localhost:3306/insurance
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+plan-api:
+  messages:
+     planSaveSucc: Plan Saved Successfully
+     planSaveFail: Plan Saving Failed
+     planUpdateSucc: Plan Updated Successfully
+     planUpdateFail: Plan Updated Failed
+     planDeleteSucc: Plan Deleted Successfully
+     planDeleteFail: Plan Fail To Delete
+     planStatusChange: Plan Status Changed Successfully
+     planStatusChangeFail: Plan Status Failed To Change 
